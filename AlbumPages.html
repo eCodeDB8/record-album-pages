@@ -2,6 +2,17 @@
 <html>
     <head>
         <title>Album Pages</title>
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
 		<style>
 		h3{
 		color:blue;
@@ -9,9 +20,6 @@
 		td{
 		font-style:italic;
 		text-align:center;
-		}
-		tbody, td {
-		background-color:lime;	
 		}
 		a {
 		text-decoration:none;
@@ -21,23 +29,32 @@
 		text-decoration:underline;
 		background-color:lime;
 		}
+		tbody tr:nth-child(even) {
+		background-color:yellow;
+		}
+		tbody tr:nth-child(odd) {
+		background-color:lime;
+		}
 		</style>
 		<link href="albumStyles.css"
 		rel="stylesheet"
 		type="text/css"/>
+
         </head>
     <body>
 <p>
 <center>
-<div style="background-image: url(http://www.popspotsnyc.com/pretzel_logic/Pretzel_logic.jpg); height: 600px; width: 600px">
+<div style="background-image: url(http://www.popspotsnyc.com/pretzel_logic/Pretzel_logic.jpg); height: 600px; width: 600px" class="img-circle"></div>
 </center>
-</div>
+
 
 <!-- <center><img src="http://www.popspotsnyc.com/pretzel_logic/Pretzel_logic.jpg" width="200px"></center> -->
 <!-- <center><img src="http://www.popspotsnyc.com/pretzel_logic/Pretzel_logic.jpg" style="width:200px"/></center> -->
 </div>       
 <center><h1 style="font-family:Helvetica">Pretzel Logic</h1></center>
-<center><h2><a href="https://www.steelydan.com/" target="_blank" class="bandlink"> Steely Dan</a></h2></center>
+<div>
+<center><h2><a href="https://www.steelydan.com/" target="_blank"> Steely Dan</a></h2></center>
+</div>
 <center><h4>February 20, 1974</h4></center>
 </p>
 <hr/>
@@ -53,6 +70,48 @@
 </ul>
 </p>
 
+<!-- Skeleton -->
+<!-- <table>
+   <caption>Table Caption</caption>
+   <thead>
+<tr><th>Heading1</th><th>Heading 2</th></tr>
+   </thead>
+   <tbody>
+<tr><td>1</td><td>Lorem<br />ipsum<br />d</td></tr>
+<tr><td>2</td><td>ipsum</td></tr>
+<tr><td>3</td><td>dolor</td></tr>
+<tr><td>4</td><td>Lorem</td></tr>
+   </tbody>
+   <tfoot>
+<tr><td colspan="2">Table Footer Text</td></tr>
+   </tfoot>
+</table>
+-->
+
+
+<table border="1" width="90%">
+   <caption style="color:blue;">Tracks</caption>
+   <thead>
+<tr><th>Track #</th><th>Track Title</th><th>Track Length</th></tr>
+   </thead>
+   <tbody>
+<tr><td>1</td><td>Rikki Don't Lose That Number</td><td>4:32</td></tr>
+<tr><td>2</td><td>Night by Night</td><td>3:40</td></tr>
+<tr><td>3</td><td>Any Major Dude Will Tell You</td><td>3:05</td></tr>
+<tr><td>4</td><td>Barrytown</td><td>3:17</td></tr>
+<tr><td>5</td><td>East St Louis Toodle-Oo</td><td>2:45</td></tr>
+<tr><td>6</td><td>Parker's Band</td><td>2:36</td></tr>
+<tr><td>7</td><td>Through With Buzz</td><td>1:30</td></tr>
+<tr><td>8</td><td>Pretzel Logic</td><td>4:32</td></tr>
+<tr><td>9</td><td>With a Gun</td><td>2:15</td></tr>
+<tr><td>10</td><td>Charlie Freak</td><td>2:41</td></tr>
+<tr><td>11</td><td>Monkey in Your Soul</td><td>2:31</td></tr>
+   </tbody>
+
+</table>
+
+
+<!-- old table 
 <table border="1" width="90%">
     <caption style="color:blue;">Tracks</caption>
     <tr bgcolor="gray">
@@ -60,7 +119,6 @@
         <th>Track Title</th>
         <th>Track Length</th>
     </tr>
- <!--center>-->
  <tbody>
     <tr>
     <td>1</td>
@@ -119,6 +177,7 @@
     </tr>
     </tbody>
 </table>
+-->
 
     </body>
 </html>
